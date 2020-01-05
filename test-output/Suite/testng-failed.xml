@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test">
+    <classes>
+      <class name="com.eprocbiling.qa.testcases.PurchasesPageTest"/>
+      <class name="com.eprocbiling.qa.testcases.CustomerPageTest"/>
+      <class name="com.eprocbiling.qa.testcases.LoginPageTest"/>
+      <class name="com.eprocbiling.qa.testcases.HomePageTest"/>
+      <class name="com.eprocbiling.qa.testcases.AddNewCustomerPageTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.eprocbiling.qa.testcases.AddNewCustomerPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.eprocbiling.qa.testcases.AddNewCustomerPageTest -->
+      <class name="com.eprocbiling.qa.testcases.HomePageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.eprocbiling.qa.testcases.HomePageTest -->
+      <class name="com.eprocbiling.qa.testcases.CustomerPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.eprocbiling.qa.testcases.CustomerPageTest -->
+      <class name="com.eprocbiling.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="setUpEnvironment"/>
+          <include name="tearDown"/>
+          <include name="combinationOfLoginTestData"/>
+        </methods>
+      </class> <!-- com.eprocbiling.qa.testcases.LoginPageTest -->
+      <class name="com.eprocbiling.qa.testcases.PurchasesPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.eprocbiling.qa.testcases.PurchasesPageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

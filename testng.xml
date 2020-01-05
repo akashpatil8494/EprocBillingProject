@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="EprocBilingTest Suite" >
+  <test name="EprocBilingTest " thread-count="5" parallel="classes">
+    <classes>
+      <class name="com.eprocbiling.qa.testcases.PurchasesPageTest"/>
+      <class name="com.eprocbiling.qa.testcases.CustomerPageTest"/>
+      <class name="com.eprocbiling.qa.testcases.LoginPageTest"/>
+      <class name="com.eprocbiling.qa.testcases.HomePageTest"/>
+      <class name="com.eprocbiling.qa.testcases.AddNewCustomerPageTest"/>
+    </classes>
+  </test> <!-- EprocBilingTest  -->
+</suite> <!-- EprocBilingTest Suite -->
